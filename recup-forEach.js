@@ -20,4 +20,4 @@ products.forEach(product=>{
         product.price = product.price+200;
         console.log(product)
     }
-})
+});
