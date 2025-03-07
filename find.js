@@ -1,4 +1,4 @@
-const product =[
+const products =[
     {id:1, name:'iPhone', color:'black', price:1200, brand:'apple'},
     {id:2, name:'xiaomi', color:'gold', price:100, brand:'xiaomi'},
     {id:3, name:'samsung', color:'gold', price:1300, brand:'sam'},
@@ -7,14 +7,7 @@ const product =[
   
 ];
 
-// const newArray = product.filter(product=>{
-//     if(product.price>1000){
-//         console.log(product)
-//     }
-// })
-
-const newArray = product.filter(product=>{
-    if(product.id !==4){
-        console.log(product)
-    }
-})
+// const product = products.find(product=>product.id===4);
+// console.log(product)
+const product = products.find(product=>product.color==='gold');
+console.log(product)
